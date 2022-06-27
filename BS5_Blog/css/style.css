@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=League+Gothic&family=Montserrat:ital,wght@1,300;1,500&family=Noto+Sans+TC:wght@700;900&family=Nunito:ital,wght@0,700;1,200;1,300;1,500&display=swap');
+
+body{
+    /* font-family: 'Fascinate', cursive; */
+    font-family: 'League Gothic', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+header{
+    background: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0,7)), url('../image/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card img {
+    filter: grayscale(70%);
+    transition: all .5s;
+}
+.card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.author-widget img {
+    height: 150px;
+    width: 150px
+}
+
+header.full-width {
+    background: url(../image/single-bg.jpg);
+}
+
+header.right-sidebar {
+    background: url('../image/single-bg2.jpg');
+}
+header.contact {
+    background: url('../image/contact-bg.jpg');
+}
+header.right-sidebar, 
+header.full-width,
+header.contact {
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

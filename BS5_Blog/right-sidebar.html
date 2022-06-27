@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/1a740fbd18.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+         <div class="container">
+             <a href="index.html" class="navbar-brand">Blog</a>
+             <button class="navbar-toggler" data-bs-target="#navbarToggle" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Single Post</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item active" href="full-width.html">Full Width</a>
+                            </li>
+                            <li>
+                                <a href="right-sidebar.html" class="dropdown-item">right-sidebar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+             </div>
+         </div>
+    </nav>
+
+    <header class="right-sidebar">
+        <div class="container d-flex align-items-center">
+            <h1 class="fw-bolder display-1 text-light">Lorem, ipsum dolor sit amet</h1>
+        </div>
+    </header>
+
+    <!-- <section class="my-4">
+        <div class="container">
+            <div class="row">
+                <!-- blog content start -->
+                <!-- <div class="col-lg-9">
+                    <div class="bg-white shadow rounded-3 p-3 p-md-5">
+
+                    </div>
+                </div> -->
+                <!-- blog content end -->
+            <!-- </div>
+        </div>
+    </section> -->
+
+    <section class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="bg-white shadow rounded-3 p-3 p-md-5">
+                        <h2 class="fw-bolder">Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quaerat eaque! Nesciunt a delectus reiciendis officiis aut, voluptates sequi eligendi! Dolorem ipsa officia corporis nesciu
+                            nt eveniet cum, architecto a voluptatibus.</p>
+                        <h2 class="fw-bolder">Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cumque ut sequi non nam quae sint et eius cum quos.</p>
+                        <h2 class="fw-bolder">Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate iusto repudiandae adipisci ea et nulla commodi veritatis nobis aliquid odit.</p>
+
+                        <figure class="figure">
+                            <img src="./image/hero.jpg" alt="" class="figure-img img-fluid rounded">
+                            <figcaption class="figure-caption text-center">A caption for the above image</figcaption>
+                        </figure>
+                        
+                        <figure class="text-center bg-secondary text-white py-3">
+                            <blockquote class="blockquote">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer text-white">
+                                Someone famous in <cite>Source Title...</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    
+                    
+
+                    
+                    
+                </div>
+
+                <!-- right sidebar start -->
+                <div class="col-lg-3">
+                    <div class="author-widget bg-white shadow text-center rounded-3">
+                        <img src="image/author.jpg" alt="" class="rounded-circle">
+                        <p class="fs-2 fw-bold pt-3">Roy Chan</p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores consequuntur totam saepe velit, tempora voluptatem, est ad ullam alias, magnam nisi harum. Hic esse animi, ipsum rem beatae excepturi?
+                    </div>
+                    <div class="bg-white shadow my-3 rounded-3">
+                        <div class="bg-secondary text-center p-3">
+                            <h6 class="mb-0 text-white fs-4">Latest Posts</h6>
+                        </div>
+                        <ul class="list-group p-3 list-group-flush">
+                            <li class="list-group-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, facere!</li>
+                            <li class="list-group-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum</li>
+                            <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white shadow my-3 rounded-3">
+                        <div class="bg-secondary text-center p-3">
+                            <h6 class="text-white fs-4">Categories</h6>
+                        </div>
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-auto">
+                                    <div class="fw-bold">Category 1</div>
+                                        Subheading of category
+                                </div>
+                                <span class="badge bg-primary rounded-pill">14</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-auto">
+                                    <div class="fw-bold">Category 2</div>
+                                        Subheading of category
+                                </div>
+                                <span class="badge bg-danger rounded-pill">17</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-auto">
+                                    <div class="fw-bold">Category 3</div>
+                                        Subheading of category
+                                </div>
+                                <span class="badge bg-warning rounded-pill">20</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- right sidebar end -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark">
+        <p class="mb-0 text-white text-center py-3">
+            @Copyright <a href="#" class="text-danger text-decoration-none fw-bold">Coding</a>
+        </p>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

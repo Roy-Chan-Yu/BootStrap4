@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+          color: red;
+        }
+        .b {
+          color: blue;
+        }
+        .menu{
+          color:orange;
+        }
+      </style>
+</head>
+<body>
+    <style>
+        .a {
+          color: red;
+        }
+        .b {
+          color: blue;
+        }
+        .menu{
+          color:orange;
+        }
+      </style>
+
+    <style>
+        nav p {
+            color: blue
+        }
+        nav > p {
+            color: red
+        }
+    </style>
+
+    <style>
+        img[title] {
+    width: 300px;
+  }
+
+  /* 選取屬性 type='text' 的目標 */
+  input[type="text"] {
+    color: blue;
+  }
+
+  a[href="http://google.com.tw"] {
+    color: red;
+  }
+
+  /* 選取 href 的屬性值開頭為 http:// 的對象  */
+  a[href^="http://"] {
+    font-size: 2em;
+  }
+
+  /* 選取 href 的屬性值結尾為 .pdf 的對象  */
+  a[href$=".pdf"] {
+    display: none;
+  }
+
+  /* 選取 img 所有 src 屬性值裡面包含單字 2019 的對象；*/
+  img[src*="2019"] {
+    display: none;
+  }
+    </style>
+    <style>
+    .divBefore::before, div::after {
+      content: "WOW!";
+      background-color: yellow;
+      padding: 0 1rem;
+      margin: 0 1rem;
+    }
+    div {
+      /* display: inline-block;
+      background: green;
+      padding: 0 1rem; */
+    }
+    ::selection{
+      color:white;
+      background: #000;;
+    }
+    </style>
+
+    <nav>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>
+              <p>AAA</p>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- 相同元素但需要不同外觀時 -->
+      <ul class="menu">
+        <li>Lorem, ipsum dolor.</li>
+        <li class="a">Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+      </ul>
+      
+      <!-- 重複使用 -->
+      <h1 class="b">Lorem</h1>
+      <p><span class="b">Lorem</span> ipsum dolor sit amet.</p>
+      
+
+      <img title="left" src="https://fakeimg.pl/150x150/" />
+      <img src="https://fakeimg.pl/150x150/" />
+      <br />
+      <a href="http://google.com.tw">Google</a>
+      <a href="http://yahoo.com.tw">Yahoo</a>
+      <br />
+      <input type="text" value="text" />
+      <input type="number" value="1234" />
+
+      <div class="divBefore">Lorem, ipsum dolor.</div>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            line-height: 1.5;
+          }
+          p {
+            font-size: 18px;
+          }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>
+          line-height 最好用數字倍數表示，這樣計算起來比較彈性，現在段落行高是 18x1.5=27px。
+        </p>
+    </div>
+
+    <div style="line-height: 0;">
+    <span>default</span>
+    <span style="vertical-align:middle">middle</span>
+    <img
+      src="https://fakeimg.pl/150x150/#ccc"
+      style="vertical-align:middle;"
+    />
+    <span style="vertical-align:bottom">Bottom</span>
+</div>
+    <!-- 父元素 -->
+    <div style="font-size: 1em;">
+        Font
+        <div style="font-size: 2em;">
+            Font
+            <div style="font-size: 3em;">
+                Font
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- 根元素  -->
+    <div style="font-size: 1rem;">
+        Font
+        <div style="font-size: 2rem;">
+            Font
+            <div style="font-size: 3rem;">
+                Font
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        // $("div").each(n => {
+        //     $(this).append($(this).css("font-size"));
+        // });
+
+        $("div").each(function() {
+    $(this).prepend($(this).css("font-size"));
+  });
+    </script>
+
+  <ul>
+    <li><a href="#">關於我們</a></li>
+    <li><a href="#">產品介紹</a></li>
+    <li><a href="#">客戶案例</a></li>
+    <li><a href="#">售後服務</a></li>
+  </ul>
+
+  <style>
+    ul {
+      font-size: 0;
+      text-align: center;
+      /* background: #3b2500; */
+    }
+    li {
+      font-size: 1rem;
+      display: inline-block;
+      /* background: rebeccapurple; */
+    }
+
+    ul {
+      display: table;
+      width: 100vw;
+      text-align: center;
+      /* background: #3b2500; */
+    }
+  </style>
+
+
+<table>
+    <tr class="odd">
+      <td>lorem</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>lorem</td>
+      <td>lorem</td>
+      <td>lorem</td>
+    </tr>
+    <tr class="odd">
+      <td>lorem</td>
+      <td>lorem</td>
+      <td>lorem</td>
+    </tr>
+    <tr>
+      <td>lorem</td>
+      <td>lorem</td>
+      <td>lorem</td>
+    </tr>
+    <tr class="odd">
+      <td>lorem</td>
+      <td>lorem</td>
+      <td>lorem</td>
+    </tr>
+  </table>
+
+    <style>
+        table {
+  /*item-align*/
+  text-align: center;
+
+  /*border 間距*/
+  border-spacing: 10px;
+
+  /*是否隱藏空欄位*/
+  empty-cells: hide;
+  
+  /* 控制是否將表格的邊框合併 (0 間距），此效果與 border-spacing 跟 empty-cells 所排斥。 */
+  border-collapse: collapse;
+
+  /*外陰影效果*/
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+td {
+  border: 1px solid #000;
+  padding: 1rem;
+  width: 100px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* table 這範例同時做到了 class 選擇器的特性，相同元素但需要不同外觀時及重複使用 */
+tr.odd {
+  background: rgb(150, 202, 226);
+}
+
+tr:hover {
+  background: rgb(207, 207, 207);
+}
+</style>
+
+<div class="circle"></div>
+
+<style>
+    .circle {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #000;
+        border-radius: 50%;
+    }
+</style>
+</body>
+</html>

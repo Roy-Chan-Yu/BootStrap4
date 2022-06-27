@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    /* :default */
+    .flex {
+      /*  宣告為彈性容器 */
+      display: flex;
+
+      /* 彈性項目依據以此為高度，因為宣告容器後 align-items 預設 stretch 的關係，會拉長至該高度 */
+      height: 600px;
+
+      /*  以下是宣告彈性容器的預設值 */
+      justify-content: flex-start;/*主軸之對齊方式：靠左 (start 位置）*/
+      align-items: stretch; /* 叉軸之對齊方式：填滿整個父容器*/
+      flex-flow: row nowrap; /* 等同 flex-direction:row; flex-wrap:nowrap; */
+      /*
+        flex-direction:row  橫向發展
+        flex-wrap:nowrap  當子項目的寬度總和超過父容器時，不拆行並自行彈縮
+      */
+    }
+    </style>
+
+
+
+<style>
+    .flex, .inline-flex {
+      height: 400px;
+      background: #ccc;
+      border: 1px solid #333;
+      /* width:800px; */
+    }
+  
+    .flex {
+      display: flex;
+    }
+  
+    .item {
+      width: 200px;
+      height: 200px;
+    }
+  
+    p.item {
+      margin: 0;
+    }
+  
+    .inline-flex {
+      display: inline-flex;
+    }
+  
+    .red {background: red;}
+    .blue {background: blue;}
+    .green {background: green;}
+  </style>
+  <strong class="flex">
+    <p class="item red"></p>
+    <span class="item blue"></span>
+    <p class="item green"></p>
+  </strong>
+  <h1 style="display:inline">[inline box]</h1>
+  <div class="inline-flex">
+    <div class="item red"></div>
+    <div class="item blue"></div>
+    <div class="item green"></div>
+  </div>
+  <h1 style="display:inline">[inline box]</h1>
+  <h1 style="display:inline-block">[inline-block box]</h1>
+
+  <style>
+    nav {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    a {
+      margin: 0 5px;
+      padding: 5px 15px;
+      background-color: #da0;
+      border-radius: 3px 3px 0 0;
+      text-decoration: none;
+      color: white;
+    }
+  
+    a:hover {
+      background-color: #fc2;
+      color: black;
+      
+    }
+  </style>
+  <nav>
+    <a href="#">我是連結</a>
+    <a href="#">我是連結</a>
+    <a href="#">我是連結</a>
+  </nav>
+
+
+
+
+  <style>
+    /* div{
+      background: #ccc;
+      height:500px;
+    } */
+    .flex {
+      display: flex;
+  
+      /*控制主軸方向*/
+      flex-direction: row; /*row:（預設）橫向左右*/
+      flex-direction: row-reverse; /*橫向右左 */
+      flex-direction: column; /*縱向上下*/
+      flex-direction: column-reverse; /*縱向下上*/
+
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .item {
+      width: 200px;
+      height: 200px;
+    }
+    p.item {
+      margin: 0;
+    }
+    .red {
+      background: red;
+    }
+    .blue {
+      background: blue;
+    }
+    .green {
+      background: green;
+    }
+  </style>
+  <div class="flex">
+    <p class="item red"></p>
+    <p class="item blue"></p>
+    <p class="item green"></p>
+  </div>
+
+
+
+
+  <style>
+    .list {
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    .list .fitem {
+      flex-basis: 20%;
+      background: #ccc;
+    }
+  
+    /*************/
+  
+    .clist {
+      font-size: 0;
+    }
+    .citem {
+      background: #ccc;
+      width: 20%;
+      display: inline-block;
+      margin: 0 3.333%;
+      font-size: 1rem;
+    }
+    .clist div:first-child {
+      margin-left: 0;
+    }
+    .clist div:last-child {
+      margin-right: 0;
+    }
+  </style>
+  <div class="list">
+    <div class="fitem">AAA</div>
+    <div class="fitem">BBB</div>
+    <div class="fitem">CCC</div>
+    <div class="fitem">DDD</div>
+  </div>
+  <hr>
+  <div class="clist">
+    <div class="citem">AAA</div>
+    <div class="citem">BBB</div>
+    <div class="citem">CCC</div>
+    <div class="citem">DDD</div>
+  </div>
+</body>
+</html>

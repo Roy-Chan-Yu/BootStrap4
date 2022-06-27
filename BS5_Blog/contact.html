@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/1a740fbd18.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+         <div class="container">
+             <a href="index.html" class="navbar-brand">Blog</a>
+             <button class="navbar-toggler" data-bs-target="#navbarToggle" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Single Post</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item active" href="full-width.html">Full Width</a>
+                            </li>
+                            <li>
+                                <a href="right-sidebar.html" class="dropdown-item">right-sidebar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+             </div>
+         </div>
+    </nav>
+
+    <header class="contact">
+        <div class="container d-flex align-items-center text-center">
+            <p class="fw-bolder display-3 text-light">Lorem, ipsum dolor sit amet</p>
+        </div>
+    </header>
+
+    <section class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                  <div class="bg-white shadow rounded-5 p-1 p-md-5">
+                    <h2 class="text-center fw-bold fs-1">Contact Us</h2>
+                    <div class="pt-5">
+                      <form action="" class="row g-3 needs-validation" novalidate>
+                        <div class="col-12">
+                            <label for="" class="form-label">Your Name</label>
+                            <div class="input-group">
+                                <span class="input-group-text">First and Last Name</span>
+                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" required >
+                                <div class="invalid-feedback">
+                                    Please put your first and last name
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good! 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input">
+                                    <label for="" class="form-check-label">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input">
+                                    <label for="" class="form-check-label">Female</label>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please select your sex.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="" class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Email address" required>
+                            <div class="invalid-feedback">
+                                Please put your email address
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good 
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="" class="form-label">Password</label>
+                            <input type="password" placeholder="Password" class="form-control">
+                            <div class="invalid-feedback">
+                                Please put your password
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <select name="" id="" class="form-select">
+                                <option disabled selected>Your Subject</option>
+                                <option value="1">Writing</option>
+                                <option value="2">Promote your service</option>
+                                <option value="3">Work with us</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="" class="form-label">Your Username</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Username">
+                                <span class="input-group-text">@example.com</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Your Budget</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control">
+                                <span class="input-group-text">.00</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="" class="form-label">Zip Code</label>
+                            <input type="number" class="form-control" placeholder="Zip">
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Send Message</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Blog content end -->
+
+            <div class="row">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark">
+        <p class="mb-0 text-white text-center py-3">
+            @Copyright <a href="#" class="text-danger text-decoration-none fw-bold">Coding</a>
+        </p>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        (function () {
+            'use strict'
+
+            var forms = document.querySelector('.needs-validation')
+            // Array.prototype.slice.call(forms)
+            //     .forEach(function (form) {
+                    forms.addEventListener('submit', function (event) {
+                        if (!forms.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        forms.classList.add('was-validated')
+                    }, false)
+                // })
+        })();
+
+    </script>
+</body>
+</html>

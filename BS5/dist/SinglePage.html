@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></link>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+
+    <style>
+      #lokifacility {
+    background:
+      url("https://picsum.photos/1080/1080/?random=1"),
+      radial-gradient(circle, #777 30%, #ccc 70%),
+      linear-gradient(to right, #999, #444);
+    background-blend-mode: multiply, screen;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  
+    text-shadow: #333 0.3rem 0.3rem 0.5rem;
+    /* https://codepen.io/danwilson/pen/dqZvmx */
+    }
+    </style>
+</head>
+<body>
+    <header class="fixed-top" id="lokimenu">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-address-card fa-fw"></i>Roy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mt-lg-0 ml-auto space-between">
+              <li class="nav-item">
+                <a class="nav-link" href="#lokiroom"><i class="fas fa-bed fa-fw"></i>房型介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-store fa-fw"></i>服務設施</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-cutlery fa-fw"></i>餐飲美食</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-map-marker fa-fw"></i>交通資訊</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-info-circle fa-fw"></i>聯絡資訊</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                    <i class="fa-brands fa-product-hunt fa-fw"></i>產品介紹
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+                  <li class="nav-item dropdown">
+                      <div class="container">
+                          <form class="">
+                              <div class="row">
+                                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+                                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                  </div>
+                                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+                                      <button class="btn btn-outline-success" type="submit">Search</button>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                  </li>
+              </nav>
+            </ul>
+          </div>
+        
+      </nav>
+    </header>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active vh-100">
+            <img src="https://picsum.photos/1920/1080/?random=1" class="w-100 h-100" alt="...">
+            <div class="carousel-caption d-flex flex-column justify-content-center vh-100">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </div>
+          <div class="carousel-item vh-100">
+            <img src="https://picsum.photos/1920/1080/?random=2" class="w-100 h-100" alt="...">
+            <div class="carousel-caption d-flex flex-column justify-content-center vh-100">
+                <h5>First slide label</h5>
+                <p class="d-none d-md-block">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+          </div>
+          <div class="carousel-item vh-100">
+            <img src="https://picsum.photos/1920/1080/?random=3" class="w-100 h-100" alt="...">
+            <div class="carousel-caption d-flex flex-column justify-content-center vh-100">
+                <h5>First slide label</h5>
+                <p class="d-none d-md-block">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <i class="fas fa-angle-double-left fa-2x"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <i class="fas fa-angle-double-right fa-2x"></i>
+        </button>
+      </div>
+      <section id="lokiroom" class="container py-5">
+          <header class="text-center">
+            <h2 class="text-info pb-3">房型介紹</h2>
+          </header>
+        <div role="tabpanel">
+          <nav class="nav nav-tabs">
+            <div class="list-group w-100 d-flex flex-row justify-content-around" id="myList" role="tablist" >
+              <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#roomA" role="tab">行政本館</a>
+              <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#roomB" role="tab">雙幕川館</a>
+              <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#roomC" role="tab">繪圖湯屋</a>
+              <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#roomPrice" role="tab">價目表</a>
+              <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#roomRule" role="tab">訂房需知</a>
+            </div>
+          </nav>
+          <div class="tab-content py-5">
+            <div class="row tab-pane fade show active" id="roomA" role="tabpanel">
+              <p class="col-12 mb-5 text-muted text-center">
+                溫馨典雅的行政本館，給您簡約的度假享受。<br>
+                使用大片落地窗，採光極佳，每房皆設有觀景陽台，讓您遠眺高山、與大自然一親芳澤。
+              </p>
+             <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                     <img src="https://fakeimg.pl/300x200/200" class="card-img-top">
+                       <div class="card-body">
+                         <h4 class="card-title">行政本館</h4>
+                         <p class="card-text">
+                          溫馨雙人房<small class="text-muted float-right">1床 | 7坪</small>
+                         </p>
+                       </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img src="https://picsum.photos/300/200/?random=1" class="card-img-top" >
+                      <div class="card-body">
+                        <h4 class="card-title">行政本館</h4>
+                        <p class="card-text">
+                          精緻雙人床<small class="text-muted float-right"> 2床 | 6坪</small>
+                        </p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                    <img class="card-img-top" src="https://picsum.photos/300/200/?random=2" >
+                    <div class="card-body">
+                      <h4 class="card-title">行政本館</h4>
+                      <p class="card-text">
+                        親子四人房<small class="text-muted float-right">2床 | 10坪</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div> 
+             </div>
+            </div>
+  
+            <div class="row tab-pane fade show" id="roomB" role="tabpanel">
+              <p class="col-12 mb-5 text-muted text-center">
+                雙幕川館又稱小木屋，房外種植有柏樹，每房皆為獨棟式小屋設計。<br>
+                打開房門就見到綠油油的寬廣草地，三五好友坐在房前的石桌上，聊天談心，呼吸一口大自然最新鮮的空氣，是最愜意的享受。
+              </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4 pb-3">
+                    <div class="card">
+                      <img class="card-img-top" src="https://fakeimg.pl/300x200/200" alt="">
+                      <div class="card-body">
+                        <h4 class="card-title">雙幕川館</h4>
+                        <p class="card-text">溫馨雙人房
+                          <small class="text-muted float-right">
+                            1 大床 | 6.5 坪
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="https://picsum.photos/300/200/?random=4" alt="">
+                      <div class="card-body">
+                        <h4 class="card-title">雙幕川館</h4>
+                        <p class="card-text">精緻雙人房
+                          <small class="text-muted float-right">1大床 | 6.5 坪</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="https://picsum.photos/300/200/?random=7" alt="">
+                      <div class="card-body">
+                        <h4 class="card-title">雙幕川館</h4>
+                        <p class="card-text">精緻雙人房
+                          <small class="text-muted float-right">1大床 | 6.5 坪</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row tab-pane fade show" id="roomC" role="tabpanel">
+              
+              <p class="col-xs-12 col-sm-12 text-muted text-center">
+                每房皆為獨棟式小屋設計，鋪設木質地板，浪漫典雅。<br>
+                房內設有溫泉浴槽，私享您的奢華溫泉浴時光。
+              </p>
+  
+              
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="https://fakeimg.pl/300x200/d1ecf1" alt="">
+                      <div class="card-body">
+                        <h4 class="card-title">繪影湯屋</h4>
+                        <p class="card-text">溫馨雙人房
+                          <small class="text-muted float-right">1 大床 | 6.5 坪</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="https://picsum.photos/300/200/?random=5" alt="">
+                      <div class="card-body">
+                        <h4 class="card-title">繪影湯屋</h4>
+                        <p class="card-text">親子四人房
+                          <small class="text-muted float-right">2大床 | 8 坪</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+  
+  
+            <div class="tab-pane fade" id="roomPrice" role="tabpanel">
+              <div class="mb-5 container">
+                <h5 class="text-info">[ 行政本館 ]</h5>
+                
+                <div class="row">
+                  <table class="table table-sm text-center">
+                    <thead>
+                      <tr class="alert-info">
+                        <th class="border-info">房型</th>
+                        <th class="border-info">平日</th>
+                        <th class="border-info">假日</th>
+                        <th class="border-info">連續國定假日</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><th>溫馨雙人房</th><td>3000</td><td>3000</td><td>3000</td></tr>
+                      <tr><th>精緻雙人房</th><td>6000</td><td>6000</td><td>6000</td></tr>  
+                      <tr><th>親子四人防</th><td>3000</td><td>3000</td><td>3000</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+              </div>
+            </div>
+  
+            <div class="tab-pane fade" id="roomRule" role="tabpanel">
+              <h3 class="text-left border-bottom border-info">入住須知</h3>
+              <h5 class="text-info">[ 飯店設備 ]</h5>
+              <p class="mb-5">
+                客房無線網路、有線第四台、自助洗衣機、免費烘乾機、免費停車場
+              </p>
+              <h5 class="text-info">[ 入住須知 ]</h5>
+              <p class="mb-5">
+                進房時間（Check In ) 時間為 15:00 以後；退房時間（Check
+                Out）時間為 11:00 以前。<br>
+                住宿時請攜帶本人身分證正本、駕照以利核對。<br>
+                一般住宿附贈早餐、SPA 券（依住宿房型開立），特殊專案依專案條件辦理。<br>
+                超過退房時間一個小時將以一個小時 200 元計費，超過半個小時將以一個小時計算。<br>
+                請注意住宿人數勿超過客房設定之人數，若有超過客房設定人數，飯店有權拒絕入住。
+              </p>
+              <h5 class="text-info">[ 平假日定義 ]</h5>
+              <p class="mb-5">
+                平日時間：星期日~星期五；假日時間：星期六、連續假日結束前一日，依飯店公告為準。
+              </p>
+              <h5 class="text-info">[ 加人服務 ]</h5>
+              <p class="mb-5">
+                本飯店繪圖湯屋房型提供加人服務（含軟墊、備品、早餐、溫泉 SPA 券），<br>
+                每加一人 NT$600（春節期間不適用）。
+              </p>
+              <h5 class="text-info">[ 其他注意事項 ]</h5>
+              <p class="mb-5">
+                為維護住宿品質，室內空間全面禁菸，禁止攜帶貓狗等寵物入住，如經查獲加收清潔費 5000 元。<br>
+                為維護公共及個人安全，禁止在房間內烹煮食物，或攜帶瓦斯、電磁爐等同性質用具，敬請房客務必配合。<br>
+                客房地面為木質地板，請勿擅自移動房內傢俱，如發現自行搬動客房家具造成木質地面損傷，需付損毁費用。<br>
+                房型擺設僅供參考，以實體房間為主。<br>
+                免費停車場（僅供免費停車，不負保管之責）。<br>
+                行政本館及雙幕川館內衛浴設備皆為一般熱水，如需使用溫泉需至戶外大眾池或改訂繪圖湯屋房型。
+              </p>
+            
+              <h3 class="text-right border-bottom border-info">官網訂房規範</h3>
+              <p class="mb-5">- 僅適用官網訂房，專案如有特殊需求，依專案為主</p>
+            
+              <h5 class="text-info">[ 線上訂房須知 ]</h5>
+              <p class="mb-5">
+                線上訂房交易價格均已含營業稅及服務費，若您選擇線上刷卡，交易成功後將由您的信用卡帳戶直接扣款。<br>
+                線上訂房不接受國民旅遊卡刷卡訂房，若需使用國民旅遊卡訂房請直接電洽櫃台辦理。
+              </p>
+            
+              <h5 class="text-info">[ 延遲入住手續 ]</h5>
+              <p class="mb-5">
+                若您在住宿當日，因塞車或其他的因素有所耽擱，無法在當日下午六點以前辦理住房手續，請您先以電話聯繫，否則飯店將視為您當日取消訂房，恕不退費。
+              </p>
+            
+              <h5 class="text-info">[ 更改入住日期 ]</h5>
+              <p class="mb-5">
+                訂房後如欲更改訂房日期，請電話聯絡協助處理。<br>
+                同一筆訂單限更改一次，且更改後的訂單恕不接受退房，否則視同取消訂房，依取消訂房規範處理。<br>
+                如更改後訂單金額大於原訂單金額，旅客需現場另行支付差額；如更改後金額小於原訂單金額，恕不退還差額。
+              </p>
+            
+              <h5 class="text-info">[ 取消訂房 ]</h5>
+              <p class="mb-5">
+                取消訂房將依以下規範酌收定金，請特別注意：<br>
+                住宿日 當日 取消訂房，扣定金總金額 100%<br>
+                住宿日 1 天前（不含當日）取消訂房，扣定金總金額 80%<br>
+                住宿日 2~3 天前（不含當日）取消訂房，扣定金總金額 70%<br>
+                住宿日 4~6 天前（不含當日）取消訂房，扣定金總金額 60%<br>
+                住宿日 7~9 天前（不含當日）取消訂房，扣定金總金額 50%<br>
+                住宿日 10~13 天前（不含當日）取消訂房，扣定金總金額 30%<br>
+                住宿日 14
+                天前（不含當日）取消訂房，扣除匯款手續費後，剩餘定金退還。<br>
+                線上訂房若有需求取消，請直接與我們「電話」聯繫進行取消訂房。<br>
+                若您使用信用卡付款，我們將由系統進行刷退動作；若您使用臨櫃匯款或 ATM 轉帳，請您傳真訂房者之任一銀行存摺封面至 089-515026。
+              </p>
+            
+              <h5 class="text-info">[ 特殊因素之退房處理 ]</h5>
+              <p class="mb-5">
+                若因天然災害等不可抗拒之因素（如地震、颱風等，以飯店所在地縣市政府公告為準）無法如期前往住宿<br>
+                請於原訂住宿日３日（含當日）內與飯店之訂房中心連絡改期（得保留 6 個月）或是辦理退費。
+              </p>
+            </div>
+          <!-- </article> -->
+        </div>
+      </section>
+
+      <section id="lokifacility" class="py-5 text-white">
+        <header class="container text-center">
+          <h2 class="pb-3">服務設施</h2>
+        </header>
+
+        <article class="container py-5 overflow-hidden">
+          
+          <div class="row">
+            <div class="col-lg-6 py-3 ">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                    <img src="https://picsum.photos/300/300/?random=6" class="img-thumbnail">
+                </div>
+                <div class="flex-grow-0 ms-3 align-self-center flex-column">
+                    <h5>John Carter <small class="text-muted"><i>Posted on January 10, 2021</i></small></h5>
+                    <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component into use and I'll let you know once I do.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 py-3">
+              <div class="d-flex ">
+                <div class="flex-shrink-0">
+                    <img src="https://picsum.photos/300/300/?random=7" class="img-thumbnail">
+                </div>
+                  <div class="flex-grow-0 ms-3 align-self-center">
+                    <h5>Lorem ipsum dolor sit amet. <small class="text-muted"><i>Post on Nov 11, 2000</i></small></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, obcaecati?</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </article>     
+      </section>
+
+<section id="lokifood" class="py-5 container d-none">
+  <header class="text-center">
+    <h2 class="text-info pb-3">餐飲美食</h2>
+  </header>
+  <article class="py-5 row">
+    <!-- tab content-->
+    <div class="col-12 col-lg-6 tab-content mb-3">
+      <img id="foodimg1" class="w-100 img-fluid img-thumbnail tab-pane fade show active"
+        src="https://picsum.photos/600/400/?random=1">
+      <img id="foodimg2" class="w-100 img-fluid img-thumbnail tab-pane fade"
+        src="https://picsum.photos/600/400/?random=2">
+      <img id="foodimg3" class="w-100 img-fluid img-thumbnail tab-pane fade"
+        src="https://picsum.photos/600/400/?random=3">
+    </div>
+
+    <!--Accordin-->
+    <div class="col-12 col-lg-6 accordion list-group px-3" id="foodmenu">
+      <div class="card" data-toggle="list" data-target="#foodimg1">
+        <a class="text-decoration-none alert-info card-header" data-toggle="collapse" href="#foodmsg1">
+          中歐頂級豪華早餐 （自助式）
+          <small class="text-muted float-right">in 2F 食堂</small>
+        </a>
+        <div id="foodmsg1" class="collapse show" data-parent="#foodmenu">
+          <div class="card-body">
+            <p>
+              致春園餐廳眺望溫泉公園景觀，嚴選谷關當地食材精心烹調充滿谷關風味的特色小吃，菜色美味有口皆碑，在這裡除了品嘗美食外更可飽覽溫泉公園山光水色，味覺與視覺的雙重享受。<br>
+              適合工商宴席、婚禮宴客、家庭聚餐、大宴小酌、台菜、客家菜、風味套餐色、香、味美。寬敞的宴會大廳飯店備有多種餐飲選擇，是用餐之好所在！，多種餐飲選擇滿足您挑剔的味蕾並歡迎親臨品嚐！!
+            </p>
+            <p class="float-right text-danger">
+              定價： 大人 NT500 / 小孩 NT300<br>
+              營業時間：AM 06:00 ~ AM 11:00
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-toggle="list" data-target="#foodimg2">
+        <a class="text-decoration-none alert-info card-header collapsed" data-toggle="collapse" href="#foodmsg2">
+          咖啡複合式鋼琴酒吧
+          <small class="text-muted float-right">in 1F 中庭</small>
+        </a>
+        <div id="foodmsg2" class="collapse" data-parent="#foodmenu">
+          <div class="card-body">
+            <p>
+              大飯店一樓的挑高中庭，瀰漫優雅的南洋休閒風，庭內雨林造景，融合水聲與天籟柔美樂音，供應各式花茶、咖啡、健康蔬果汁、英式下午茶及宵夜，揉合自然音樂，是您輕鬆暢敘的最佳地點。<br>
+              （假日二人樂團鋼琴、長笛、薩克斯風演奏）
+            </p>
+            <p class="float-right text-danger">
+              基本消費：NT150 + 10% / 位<br>
+              營業時間：PM 07:00 ~ AM 01:00
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-toggle="list" data-target="#foodimg3">
+        <a class="text-decoration-none alert-info card-header collapsed" data-toggle="collapse" href="#foodmsg3">
+          桶仔爐烤春雞 露營客最愛
+          <small class="text-muted float-right">代訂預約</small>
+        </a>
+        <div id="foodmsg3" class="collapse" data-parent="#foodmenu">
+          <div class="card-body">
+            <p>
+              精選體型小、骨骼細的 40 天春雞，將其均勻裹上一層厚厚的楓糖芥末後，再送進烤爐燒烤。<br>
+              爐烤春雞因恰到好處的溫度而能保有鮮嫩口感與湯汁；取出整隻雞後，你可用手輕易撥開骨架幼嫩的春雞，一口咬下細膩的肉質，感受混合著楓糖芥末醬汁的酥脆表皮，享受這多層次卻不膩口的美味，亦是本季每日午時限量的私房美饌。
+            </p>
+            <p class="float-right text-danger">
+              露營客代訂服務 $800/隻<br>
+              （以利備食材，請於一週前預約）
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </article>
+</section>
+
+  <section id="lokifood" class="py-5 container">
+    <header class="text-center">
+      <h2>餐飲美食</h2>
+    </header>
+
+    <article>
+
+    <div class="col-lg-6 tab-content">
+        <!-- <img src="https://picsum.photos/600/400/?random=10" id="foodimg1" class="w-100 img-fluid img-thumbnail tab-pane">
+        <img src="https://picsum.photos/600/400/?random=11" id="foodimg2" class="w-100 img-fluid img-thumbnail tab-pane">
+        <img src="https://picsum.photos/600/400/?random=11" id="foodimg3" class="w-100 img-fluid img-thumbnail tab-pane"> -->
+      
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <div class="card">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="fa-solid fa-bread-slice fa-2x fa-fw"></i>自助餐
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <!-- <div class="accordion-body">
+               <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+              <!-- </div> -->
+              <div class="accordion-body card-body">
+                <div class="d-flex">
+                  <h5 class="card-title px-4">Title</h5>
+                  <p class="card-text">致春園餐廳眺望溫泉公園景觀，嚴選谷關當地食材精心烹調充滿谷關風味的特色小吃，菜色美味有口皆碑，在這裡除了品嘗美食外更可飽覽溫泉公園山光水色，味覺與視覺的雙重享受。
+                    適合工商宴席、婚禮宴客、家庭聚餐、大宴小酌、台菜、客家菜、風味套餐色、香、味美。寬敞的宴會大廳飯店備有多種餐飲選擇，是用餐之好所在！，多種餐飲選擇滿足您挑剔的味蕾並歡迎親臨品嚐！!</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-end">
+                  <p class="text-danger">定價： 大人 NT500 / 小孩 NT300 <br />
+                    營業時間：AM 06:00 ~ AM 11:00
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="card">
+          </div>
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="fa-solid fa-mug-saucer fa-2x fa-fw"></i>咖啡複合式鋼琴酒吧
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="card-body">
+              <div class="d-flex">
+                <h5 class="card-title px-4">Title</h5>
+                <p class="card-text">大飯店一樓的挑高中庭，瀰漫優雅的南洋休閒風，庭內雨林造景，融合水聲與天籟柔美樂音，供應各式花茶、咖啡、健康蔬果汁、英式下午茶及宵夜，揉合自然音樂，是您輕鬆暢敘的最佳地點。<br> </p>
+              </div>
+              <hr />
+              <div class="d-flex justify-content-end">
+                  <p class="text-danger">
+                    基本消費：NT150 + 10% / 位<br>
+                    營業時間：PM 07:00 ~ AM 01:00
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="card">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa-solid fa-drumstick-bite fa-2x fa-fw"></i>桶子爐烤春雞
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <!-- <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div> -->
+              <div class="card-body">
+                <div class="d-flex">
+                  <h4 class="card-title px-4">Title</h4>
+                  <p class="card-text">
+                    精選體型小、骨骼細的 40 天春雞，將其均勻裹上一層厚厚的楓糖芥末後，再送進烤爐燒烤。<br>
+                    爐烤春雞因恰到好處的溫度而能保有鮮嫩口感與湯汁；取出整隻雞後，你可用手輕易撥開骨架幼嫩的春雞，一口咬下細膩的肉質，感受混合著楓糖芥末醬汁的酥脆表皮，享受這多層次卻不膩口的美味，亦是本季每日午時限量的私房美饌。
+                  </p>
+                </div>
+                <hr />
+
+                <div class="d-flex justify-content-end">
+                  <p class="text-danger">
+                    露營客代訂服務 $800/隻<br>
+                    （以利備食材，請於一週前預約）
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </article>
+  </section>
+
+  <footer>
+    <h4>
+      <br> copyright &copy; 落磯數位設計
+    </h4>
+    
+    <div id="scrolltop" class="position-fixed">
+      <a class="btn btn-info text-light" href="#lokislider"><i class="fas fa-angle-double-up fa-2x"></i></a>
+    </div>
+  </footer>
+
+  <p class="mb-0 text-center"><a href="javascript:;" id="scroll-top" class="text-dark text-decoration-none">Back to Top</a></p>
+
+</body>
+<script>
+  const tab = new bootstrap.Tab('#myList');
+  tab.show();
+</script>
+<script>
+  $(document).ready(function(){
+    $("html").css('scroll-behavior', 'auto');
+    $("#scroll-top").click(function() {
+        $("body,html").animate({
+          scrollTop: 0
+        },500);
+    });
+  });
+</script>
+
+<script>
+  // scroll to id
+$("#lokimenu a, #scrolltop a").click(function () {
+    let who = $(this).attr("href");
+    let val = $(who).offset().top - $("#lokimenu").innerHeight();
+    $("html").animate(
+      { scrollTop: val }, 1000, "swing"
+    );
+  });
+  
+  $(window).scroll(() => {
+    spy(); // scroll spy
+    bgmenu(); //check menu bg
+  });
+  
+  $(window).ready(() => {
+    spy();
+    bgmenu();
+  })
+  
+  function spy() {
+    let nowat = $(window).scrollTop();
+    $('section').each(function () {
+      let
+        id = $(this).attr('id'),
+        offset = $(this).offset().top - $("#lokimenu").innerHeight() - 1,
+        height = $(this).height();
+  
+      if (offset <= nowat && nowat < offset + height) {
+        $("#lokimenu a").removeClass('active');
+        $(`#lokimenu a[href='#${id}']`).addClass('active');
+      };
+    });
+  }
+  
+  function bgmenu() {
+    /* 控制 Header's Navbar 的 bg-dark 因 scroll 而變動。*/
+    let
+      totalw = $(window).innerWidth(),
+      nowat = $(window).scrollTop(),
+      offset = $("#lokimenu").innerHeight() + 1,
+      height = $("#lokislider").height();
+    if (nowat <= height - offset) {
+      if (totalw >= 769) 
+        $("#lokimenu").removeClass("bg-dark");
+
+      $("#scrolltop").removeClass("shown");
+    }
+    else {
+      if (totalw >= 769) 
+        $("#lokimenu").addClass("bg-dark");
+      
+      $('#lokimenu').addClass("bg-dark");
+      $("#scrolltop").addClass("shown bg-dark");
+    }
+  }
+</script>
+</html>

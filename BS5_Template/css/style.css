@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Montserrat:ital,wght@1,300;1,500&family=Noto+Sans+TC:wght@700;900&display=swap');
+body {
+    font-family: 'Fascinate', cursive;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-link.active {
+    color: aqua !important;
+}
