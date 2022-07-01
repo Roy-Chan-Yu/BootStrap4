@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1a740fbd18.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/tiny-slider.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body id="top" data-bs-spy="scroll" data-bs-target="#navbar-scroll">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar-scroll">
+        <div class="custom-wrapper">
+            <a href="#" class="navbar-brand">
+                <img src="image/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portofilo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonial" class="nav-link">Testimonial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header position-relative" style="background-image: url('image/bg-image.jpg'); background-repeat: no-repeat; background-size: cover; " id="home">
+        <div class="d-flex flex-column justify-content-center container py-5 min-vh-100">
+            <h1 class="site-title">Hi, I'm <span class="text-name">Jackson</span></h1>
+            <p class="fs-3 my-job my-4">I Am <span class="typewritter"></span></p>
+        </div>
+        <a href="#about" class="scroll-down-arrow text-white position-absolute">
+            <span class="animated">
+                <i class="fas fa-chevron-down"> </i>
+            </span>
+        </a>
+    </header>
+
+
+    <!-- about section start -->
+
+    <section id="about" class="about bg-dark-1">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-5 pb-5 pb-lg-0">
+                    <img src="image/about.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-7 d-flex justify-content-center flex-column">
+                    <h2 class="section-title">About Me</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro at quasi deleniti consequuntur accusamus accusantium aperiam illo nisi, quod dignissimos.
+                    </p>
+                    <ul class="nav nav-tabs my-4" id="tab">
+                        <li class="nav-item active">
+                            <a href="#skills" class="nav-link">My Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#experiences" class="nav-link">Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#certification" class="nav-link">Certification</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="skills">
+                            <ul class="list-unstyled">
+                                <li><strong>Front-end web development</strong></li>
+                                <li>Top quality static website design with modern techniques</li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><strong>Wordpress development</strong></li>
+                                <li>Top quality static website design with modern techniques</li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><strong>App development</strong></li>
+                                <li>Top quality static website design with modern techniques</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="experiences">
+                            <ul class="list-unstyled">
+                                <li><strong>Sr. Front-end Engineer - Google</strong></li>
+                                <li>Top quality static website design with modern techniques</li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><strong>Front-end Engineer - Microsoft</strong></li>
+                                <li>Top quality static website design with modern techniques</li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><strong>Software Engineer - Alibaba</strong></li>
+                                <li>Top quality static website design with modern techniques</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="certification">
+                            <ul class="list-unstyled">
+                                <li><strong>BSc In CSE - ABC University, Los Angeles, CA</strong></li>
+                                <li>Top quality static website design with modern techniques</li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><strong>Wordpress development</strong></li>
+                                <li>Top quality static website design with modern techniques</li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><strong>App development</strong></li>
+                                <li>Top quality static website design with modern techniques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+
+    <section class="bg-dark-2 py-5" id="services">
+        <div class="container pt-5">
+            <div class="section-title-center text-center pb-5">
+                <div class="section-title">What Do I Do</div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores illum nam ex aspernatur quo? Incidunt.
+                </p>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-6 mb-5">
+                    <div class="single-services d-flex">
+                        <div class="single-service-icon align-self-start position-relative">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5>PSD to HTML</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sapiente dolorem consequuntur praesentium, placeat quibusdam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="single-services d-flex">
+                        <div class="single-service-icon align-self-start position-relative">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5>PSD to HTML</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sapiente dolorem consequuntur praesentium, placeat quibusdam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="single-services d-flex">
+                        <div class="single-service-icon align-self-start position-relative">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5>PSD to HTML</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sapiente dolorem consequuntur praesentium, placeat quibusdam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="single-services d-flex">
+                        <div class="single-service-icon align-self-start position-relative">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5>PSD to HTML</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sapiente dolorem consequuntur praesentium, placeat quibusdam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="single-services d-flex">
+                        <div class="single-service-icon align-self-start position-relative">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5>PSD to HTML</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sapiente dolorem consequuntur praesentium, placeat quibusdam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="single-services d-flex">
+                        <div class="single-service-icon align-self-start position-relative">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5>PSD to HTML</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sapiente dolorem consequuntur praesentium, placeat quibusdam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section -->
+    <section class="py-5 bg-dark-1" id="portfolio">
+        <div class="container py-5">
+            <div class="section-title-center text-center py-5">
+                <h2 class="section-title">My Projects</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus odit cum ratione dicta sed id sequi? Officia, excepturi explicabo cupiditate ipsam iusto commodi reiciendis aperiam fuga libero labore nulla delectus!</p>
+            </div>
+            <div class="portfolio-filter text-center pb-5">
+                <button class="fil-btn clicked" data-filter="*">All</button>
+                <button class="fil-btn" data-filter=".web">Web Design</button>
+                <button class="fil-btn" data-filter=".design">Graphics Design</button>
+                <button class="fil-btn" data-filter=".marketing">Marketing</button>
+            </div>
+    
+            <div class="grid row">
+                <div class="grid-item col-lg-4 col-sm-6 web marketing">
+                    <div class="prt-item">
+                        <img src="image/img-1.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="grid-item col-lg-4 col-sm-6 design">
+                    <div class="prt-item">
+                        <img src="image/img-2.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="grid-item col-lg-4 col-sm-6 marketing design">
+                    <div class="prt-item">
+                        <img src="image/img-3.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="grid-item col-lg-4 col-sm-6 web">
+                    <div class="prt-item">
+                        <img src="image/img-4.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="grid-item col-lg-4 col-sm-6 web">
+                    <div class="prt-item">
+                        <img src="image/img-5.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="grid-item col-lg-4 col-sm-6 design">
+                    <div class="prt-item">
+                        <img src="image/img-6.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="grid-item col-lg-4 col-sm-6 marketing">
+                    <div class="prt-item">
+                        <img src="image/img-7.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="grid-item col-lg-4 col-sm-6 marketing">
+                    <div class="prt-item">
+                        <img src="image/img-8.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="grid-item col-lg-4 col-sm-6 web design marketing">
+                    <div class="prt-item">
+    
+                        <img src="image/img-1 (14).jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="py-5 bg-dark-2" id="testimonial">
+        <div class="container py-5">
+            <div class="section-title-center text-center pb-5">
+                <h2 class="section-title">What Clients Say?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi ipsam veniam ducimus. Ex dolorum facilis laborum quo minus est! Esse amet at perferendis laboriosam totam quam placeat. Cupiditate, impedit.</p>
+            </div>
+            <div class="my-slider py-5">
+                <div class="single-test">
+                    <div class="single-test-content bg-dark-1 p-5">
+                        <div class="d-flex">
+                            <img src="image/client-1.jpg" alt="" class="test-thumb">
+                            <div class="test-meta ms-3">
+                                <p>Elon Mask</p>
+                                <p class="small fw-bold">CEO - Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, id.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-test">
+                    <div class="single-test-content bg-dark-1 p-5">
+                        <div class="d-flex">
+                            <img src="image/client-2.jpg" alt="" class="test-thumb">
+                            <div class="test-meta ms-3">
+                                <p class="mb-0 test-white">Jrue Holiday</p>
+                                <p class="small fw-bold">CEO - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore doloribus facilis ab commodi aperiam. Temporibus, nulla eos consequatur exercitationem ut adipisci doloribus blanditiis alias. Amet aperiam a ipsum deserunt neque!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-test">
+                    <div class="single-test-content bg-dark-1 p-5">
+                        <div class="d-flex">
+                            <img src="image/client-3.jpg" alt="" class="test-thumb">
+                            <div class="test-meta ms-3">
+                                <p class="mb-0 test-white">Joe Cathy</p>
+                                <p class="small fw-bold">CEO - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore doloribus facilis ab commodi aperiam. Temporibus, nulla eos consequatur exercitationem ut adipisci doloribus blanditiis alias. Amet aperiam a ipsum deserunt neque!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-test">
+                    <div class="single-test-content bg-dark-1 p-5">
+                        <div class="d-flex">
+                            <img src="image/client-4.jpg" alt="" class="test-thumb">
+                            <div class="test-meta ms-3">
+                                <p class="mb-0 test-white">Alex Ashley</p>
+                                <p class="small fw-bold">CEO - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore doloribus facilis ab commodi aperiam. Temporibus, nulla eos consequatur exercitationem ut adipisci doloribus blanditiis alias. Amet aperiam a ipsum deserunt neque!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark-1 py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="py-5">
+                        <h2 class="section-title">Hire Me</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quidem neque eos doloremque excepturi ad blanditiis temporibus porro recusandae ipsum.</p>
+                    </div>
+                    <form action="#" method="get" class="py-5">
+                        <div class="mb-3">
+                            <input type="text" class="form-control bg-transparent border-secondary small text-white" placeholder="Please enter your name" required name="visitors_name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="visitors_email" id="" class="form-control bg-transparent border-secondary small text-white" placeholder="Please enter your mail">
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="visitors_message" id="" cols="30" rows="10" class="form-control bg-transparent border-secondary small text-white" placeholder="Please enter your message"></textarea>
+                        </div>
+                        <button class="btn btn-submit bg-danger text-light" type="submit">SUBMIT</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-5 text-center">
+                    <img src="./image/contact.jpg" alt="Contact" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark">
+        <div class="custom-wrapper d-flex justify-content-between py-4 text-center">
+            <img src="image/logo.png" alt="" class="pb-3 img-fluid">
+            <div class="nav-social text-center pb-3 pb-lg-0">
+                <a href="#" class="me-4 text-light"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="me-4 text-light"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="me-4 text-light"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="small fw-bold mb-0 pb-3 pb-lg-0">All Right Reserved | <a href="#" class="text-pink text-decoration-none">mr.Coder</a></p>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top">
+        <a href="#top"><i class="fas fa-chevron-up text-danger"></i></a>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/core.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="./js/tiny-slider.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
